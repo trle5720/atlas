@@ -1,0 +1,74 @@
+body {
+  background-color: white;
+  color: #333333;
+  font:
+    1em / 1.4 "Helvetica Neue",
+    "Helvetica",
+    "Arial",
+    sans-serif;
+  padding: 2em;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+strong {
+  color: blue   ;
+}
+
+p {
+  color: black;
+  margin: 0.5em 0;
+}
+
+ol {
+  border: 2px solid lightskyblue;
+  border-radius: 20px;
+}
+
+ul {
+  border: 2px solid lightskyblue;
+  border-radius: 20px;
+}
+
+ol,
+ul {
+  padding: 15px 40px;
+}
+
+dl {
+  color: black;
+  margin: 0.5em 0;
+}
+
+dt {
+  font-weight: bold;
+  color: darkblue;
+}
+
+p,
+em {
+  margin: 0.5em 0;
+}
+
+em {
+  color: gray;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
