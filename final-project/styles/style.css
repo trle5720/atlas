@@ -2,6 +2,7 @@
 :root {
   --olive: #8a9a2e;
   --olive-dark: #6e7a22;
+  --blue: #F0F8FF;
   --gray-bg: #e8e8e8;
   --text: #1a1a1a;
   --text-light: #444;
@@ -254,8 +255,8 @@ a:focus, button:focus { outline: 3px solid #ffbf47; outline-offset: 2px; }
 
 /* ── FOOTER ── */
 .vive-footer {
-  background-color: var(--olive-dark);
-  color: #fff;
+  background-color: var(--olive);
+  color: black;
   padding: 48px 40px 0;
 }
 
@@ -284,7 +285,7 @@ a:focus, button:focus { outline: 3px solid #ffbf47; outline-offset: 2px; }
 .footer-tagline {
   font-family: Arial, sans-serif;
   font-size: 0.85rem;
-  color: rgba(255,255,255,0.9);
+  color: rgba(0, 0, 0, 0.9);
   margin: 0;
   font-style: italic;
 }
@@ -298,13 +299,13 @@ a:focus, button:focus { outline: 3px solid #ffbf47; outline-offset: 2px; }
   font-weight: bold;
   font-size: 0.95rem;
   margin-bottom: 10px;
-  color: #fff;
+  color: #000000;
 }
 
 .footer-col p {
   font-family: Arial, sans-serif;
   font-size: 0.88rem;
-  color: rgba(255,255,255,0.9);
+  color: rgba(0, 0, 0, 0.9);
   line-height: 1.6;
   margin-bottom: 4px;
 }
@@ -322,7 +323,7 @@ a:focus, button:focus { outline: 3px solid #ffbf47; outline-offset: 2px; }
   justify-content: center;
   width: 36px;
   height: 36px;
-  color: #fff;
+  color: #000000;
   transition: opacity 0.2s;
 }
 
@@ -340,7 +341,7 @@ a:focus, button:focus { outline: 3px solid #ffbf47; outline-offset: 2px; }
 .footer-bottom p {
   font-family: Arial, sans-serif;
   font-size: 0.82rem;
-  color: rgba(255,255,255,0.85);
+  color: rgba(0, 0, 0, 0.85);
   margin: 0;
 }
 
