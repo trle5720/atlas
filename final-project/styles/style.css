@@ -1,0 +1,367 @@
+/* ── BASE ── */
+:root {
+  --olive: #8a9a2e;
+  --olive-dark: #6e7a22;
+  --gray-bg: #e8e8e8;
+  --text: #1a1a1a;
+  --text-light: #444;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Georgia', serif;
+  color: var(--text);
+  background: #fff;
+  line-height: 1.7;
+}
+
+a { color: var(--text); text-decoration: none; }
+a:focus, button:focus { outline: 3px solid #ffbf47; outline-offset: 2px; }
+
+/* ── NAVBAR ── */
+.vive-nav {
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 0;
+}
+
+.nav-logo {
+  height: 52px;
+  width: auto;
+}
+
+.vive-nav .nav-link {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  color: #222 !important;
+  padding: 6px 12px !important;
+}
+
+.vive-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* ── HERO ── */
+.hero-section {
+  width: 100%;
+  line-height: 0;
+}
+
+.hero-img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  object-position: center 30%;
+  display: block;
+}
+
+/* ── OUR VALUES ── */
+.values-section {
+  padding: 60px 40px 56px;
+  text-align: center;
+  background: #fff;
+}
+
+.section-heading {
+  font-family: Georgia, serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: bold;
+  color: var(--text);
+  margin-bottom: 44px;
+}
+
+.values-grid {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.value-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  min-width: 120px;
+}
+
+.value-icon {
+  width: 72px;
+  height: 72px;
+}
+
+.value-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.value-label {
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  color: var(--text);
+  text-align: center;
+  margin: 0;
+}
+
+/* ── MISSION / VISION ── */
+.mv-section {
+  width: 100%;
+}
+
+.mv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+.mv-text {
+  background: var(--gray-bg);
+  padding: 48px 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.mv-heading {
+  font-family: Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: var(--text);
+}
+
+.mv-text p {
+  font-family: Arial, sans-serif;
+  font-size: 0.97rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+.mv-photo {
+  overflow: hidden;
+}
+
+.mv-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  min-height: 260px;
+}
+
+/* ── OUR STORY ── */
+.story-section {
+  padding: 56px 40px;
+  background: #fff;
+}
+
+.story-inner {
+  max-width: 900px;
+}
+
+.story-heading {
+  font-family: Georgia, serif;
+  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--text);
+}
+
+.story-section p,
+.awards-section p {
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.75;
+  margin-bottom: 16px;
+  max-width: 860px;
+}
+
+.story-section p:last-child,
+.awards-section p:last-child {
+  margin-bottom: 0;
+}
+
+/* ── OUR IMPACT ── */
+.impact-section {
+  background: var(--gray-bg);
+  padding: 60px 40px;
+}
+
+.impact-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.impact-section .section-heading {
+  margin-bottom: 40px;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.impact-card {
+  background: #fff;
+  padding: 32px 28px;
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* ── AWARDS ── */
+.awards-section {
+  padding: 56px 40px;
+  background: #fff;
+}
+
+.awards-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 1000px;
+}
+
+.awards-text .story-heading {
+  margin-bottom: 20px;
+}
+
+.awards-logos {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.awards-logos img {
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ── FOOTER ── */
+.vive-footer {
+  background-color: var(--olive);
+  color: #fff;
+  padding: 48px 40px 0;
+}
+
+.footer-inner {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
+
+.footer-brand {
+  flex: 0 0 auto;
+}
+
+.footer-logo {
+  height: 56px;
+  width: auto;
+  margin-bottom: 8px;
+  /* If logo is dark, use filter to make it visible on olive bg */
+  filter: brightness(0) invert(1);
+}
+
+.footer-tagline {
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.9);
+  margin: 0;
+  font-style: italic;
+}
+
+.footer-col {
+  flex: 0 0 auto;
+}
+
+.footer-col-heading {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-col p {
+  font-family: Arial, sans-serif;
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.6;
+  margin-bottom: 4px;
+}
+
+.footer-social {
+  margin-left: auto;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: #fff;
+  transition: opacity 0.2s;
+}
+
+.social-icon:hover { opacity: 0.75; }
+.social-icon svg { width: 28px; height: 28px; }
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.25);
+  padding: 16px 0;
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-bottom p {
+  font-family: Arial, sans-serif;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.85);
+  margin: 0;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .mv-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* On mobile reorder: mission text, mission photo, vision photo, vision text */
+  .mv-grid .mv-photo:first-of-type { order: 2; }
+  .mv-grid .mv-photo:last-of-type  { order: 3; }
+
+  .impact-grid { grid-template-columns: 1fr; }
+
+  .awards-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .values-grid { gap: 28px; }
+
+  .footer-inner { flex-direction: column; gap: 28px; }
+  .footer-social { margin-left: 0; }
+
+  .hero-img { height: 240px; }
+}
