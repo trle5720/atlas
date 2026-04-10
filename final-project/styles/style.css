@@ -50,7 +50,7 @@ a:focus, button:focus { outline: 3px solid #ffbf47; outline-offset: 2px; }
 
 .hero-img {
   width: 100%;
-  height: 420px;
+  height: 600px;
   object-fit: cover;
   object-position: center 30%;
   display: block;
@@ -157,10 +157,12 @@ a:focus, button:focus { outline: 3px solid #ffbf47; outline-offset: 2px; }
 .story-section {
   padding: 56px 40px;
   background: #fff;
+  text-align: center;
 }
 
 .story-inner {
   max-width: 900px;
+  text-align: center;
 }
 
 .story-heading {
@@ -221,6 +223,7 @@ a:focus, button:focus { outline: 3px solid #ffbf47; outline-offset: 2px; }
 .awards-section {
   padding: 56px 40px;
   background: #fff;
+  text-align: center;
 }
 
 .awards-inner {
@@ -251,7 +254,7 @@ a:focus, button:focus { outline: 3px solid #ffbf47; outline-offset: 2px; }
 
 /* ── FOOTER ── */
 .vive-footer {
-  background-color: var(--olive);
+  background-color: var(--olive-dark);
   color: #fff;
   padding: 48px 40px 0;
 }
@@ -364,4 +367,207 @@ a:focus, button:focus { outline: 3px solid #ffbf47; outline-offset: 2px; }
   .footer-social { margin-left: 0; }
 
   .hero-img { height: 240px; }
+}
+
+/* ══════════════════════════════════════
+   PROGRAMS PAGE
+══════════════════════════════════════ */
+ 
+/* ── Programs Hero ── */
+.programs-hero {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+}
+ 
+.programs-hero-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  object-position: center 40%;
+  display: block;
+}
+ 
+.programs-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.42);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 60px;
+  line-height: 1.2;
+}
+ 
+.programs-hero-title {
+  font-family: Georgia, serif;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+ 
+.programs-hero-sub {
+  font-family: Georgia, serif;
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+  color: #f0e040;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0;
+}
+ 
+/* ── Memorable Experiences ── */
+.memorable-section {
+  background: #e8e8e8;
+  padding: 56px 40px;
+}
+ 
+.memorable-inner {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 52px;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+ 
+.memorable-photo img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+ 
+.memorable-text h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: bold;
+  color: var(--text);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+ 
+.memorable-text p {
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.7;
+  margin: 0;
+}
+ 
+/* ── Summer Camp ── */
+.summer-section {
+  background: #fff;
+  padding: 56px 40px;
+  border-bottom: 1px solid #e0e0e0;
+}
+ 
+.summer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+ 
+.summer-heading {
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text);
+  margin-bottom: 28px;
+}
+ 
+.summer-photos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  margin-bottom: 24px;
+}
+ 
+.summer-photos img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+ 
+.summer-caption {
+  font-family: Arial, sans-serif;
+  font-size: 0.93rem;
+  color: #444;
+  line-height: 1.75;
+  text-align: left;
+  margin: 0;
+}
+ 
+/* ── Programs Grid ── */
+.programs-grid-section {
+  background: #fff;
+  padding: 8px 40px 60px;
+}
+ 
+.programs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+ 
+/* ── Program Card ── */
+.program-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 28px 28px 32px;
+}
+ 
+.program-card-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+ 
+.program-card-photos img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  display: block;
+}
+ 
+.program-card-heading {
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--text);
+  line-height: 1.3;
+  margin: 0 0 10px;
+}
+ 
+.program-card p {
+  font-family: Arial, sans-serif;
+  font-size: 0.88rem;
+  color: #444;
+  line-height: 1.7;
+  margin: 0;
+}
+ 
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .programs-hero-img { height: 260px; }
+  .programs-hero-overlay { padding: 0 28px; }
+ 
+  .memorable-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .memorable-photo { display: flex; justify-content: center; }
+ 
+  .programs-grid {
+    grid-template-columns: 1fr;
+  }
+ 
+  .programs-grid-section { padding: 8px 20px 40px; }
+  .summer-section { padding: 40px 20px; }
+  .memorable-section { padding: 40px 20px; }
 }
