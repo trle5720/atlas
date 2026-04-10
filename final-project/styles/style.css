@@ -440,7 +440,7 @@ a:focus, button:focus { outline: 3px solid #ffbf47; outline-offset: 2px; }
   display: block;
 }
  
-.memorable-text h2 {
+.memorable-text h1 {
   font-family: Georgia, serif;
   font-size: clamp(1.6rem, 3vw, 2.2rem);
   font-weight: bold;
